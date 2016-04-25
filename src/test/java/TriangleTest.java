@@ -45,7 +45,7 @@ public class TriangleTest {
   }
   @Test
   public void isScalene_noSidesEqual_true() {
-    Triangle testTriangle = new Triangle(1, 2, 4);
+    Triangle testTriangle = new Triangle(10, 5, 7);
     assertEquals(true, testTriangle.isScalene());
   }
 }

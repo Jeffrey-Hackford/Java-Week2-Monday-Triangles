@@ -77,8 +77,10 @@ public class Triangle {
       isosceles = true;
     } return isosceles;
   }
-  // public boolean isScalene() {
-  //   return mLength == mWidth;
-  // }
-
+  public boolean isScalene() {
+    Boolean scalene = false;
+    if (mSide1 + mSide2 > mSide3 && mSide1 + mSide3 > mSide2 && mSide2 + mSide3 > mSide1 && mSide1 != mSide2 && mSide2 != mSide3 && mSide1 != mSide3) {
+      scalene = true;
+    } return scalene;
+  }
 }
