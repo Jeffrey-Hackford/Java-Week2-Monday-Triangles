@@ -23,14 +23,15 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Triangle finder");
   }
 
-//   @Test
-//   public void squareTestIsASquare() {
-//     goTo("http://localhost:4567/");
-//     fill("#length").with("5");
-//     fill("#width").with("5");
-//     submit(".btn");
-//     assertThat(pageSource()).contains("Your rectangle is a square!");
-//   }
+  @Test
+  public void triangleTestIsEquilateral() {
+    goTo("http://localhost:4567/");
+    fill("#side1").with("2");
+    fill("#side2").with("2");
+    fill("#side3").with("2");
+    submit(".btn");
+    assertThat(pageSource()).contains("Your side lengths make an Equilateral triangle!");
+  }
 //
 //   @Test
 // public void squareTestIsNotASquare() {
