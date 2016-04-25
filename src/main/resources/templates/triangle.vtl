@@ -4,6 +4,10 @@
 
 #if ($myTriangle.isTriangle() && $myTriangle.isEquilateral())
   <p><h3>Your side lengths make an Equilateral triangle!</h3></p>
-#else
-  <p><h3>Your triangle isn't a square!</h3></p>
+#else if ($myTriangle.isTriangle() && $myTriangle.isIsosceles())
+  <p><h3>Your side lengths make an Isosceles Triangle!</p></h3>
+#else if ($myTriangle.isTriangle() && $myTriangle.isScalene())
+  <p><h3>Your side lengths make a Scalene Triangle!</p></h3>  
+# else
+  <p><h3>Your measurements don't make a triangle!</h3></p>
 #end
